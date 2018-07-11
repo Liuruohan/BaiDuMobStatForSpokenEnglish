@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" , :tag => "#{s.version}"}
 
-  s.vendored_libraries = "BaiduMobStatForSpokenEnglish.a"
+  s.vendored_library = "BaiduMobStatForSpokenEnglish.a"
 
   s.source_files  =  "*.{h,m}"
   s.public_header_files = "*.h"
