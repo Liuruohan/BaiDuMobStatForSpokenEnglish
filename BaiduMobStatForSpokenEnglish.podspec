@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish"
   
-  s.author             = { "RenJiaoRuoHan" => "beifengliang@163.com" }
+  s.author       = { "RenJiaoRuoHan" => "beifengliang@163.com" }
   
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   
@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" , :tag => "#{s.version}"}
 
-  s.vendored_library = "BaiduMobStatForSpokenEnglish.a"
+  s.vendored_libraries = 'BaiduSDK/BaiduMobStatForSpokenEnglish.a'
 
-  s.source_files  =  "*.{h,m}"
-  s.public_header_files = "*.h"
+  s.source_files  =  "BaiduSDK/*.{h,m}"
+  s.public_header_files = "BaiduSDK/*.h"
 
   s.frameworks = "Security","CoreLocation","SystemConfiguration","CoreTelephony","CoreGraphics","Foundation","UIKit","AdSupport"
   
