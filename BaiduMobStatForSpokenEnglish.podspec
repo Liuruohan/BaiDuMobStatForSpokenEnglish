@@ -17,14 +17,17 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" }
 
-  s.vendored_libraries = 'BaiduSDK/BaiduMobStatForSpokenEnglish.a'
 
-  s.source_files  =  "BaiduSDK/*.{h,m}"
-  s.public_header_files = "BaiduSDK/*.h"
+  s.subspec "BaiduSDK" do |BaiduSDK|
+
+    BaiduSDK.source_files  = "BaiduSDK/*.{h,m}"
+    BaiduSDK.vendored_libraries = 'BaiduSDK/BaiduMobStatForSpokenEnglish.a'
+
+  end
 
   s.frameworks = "Security","CoreLocation","SystemConfiguration","CoreTelephony","CoreGraphics","Foundation","UIKit","AdSupport"
   
-  s.libraries = "z.1.2.5","stdc++","icucore"
+  s.ios.libraries = 'z.1.2.5','stdc++','icucore'
 
   s.requires_arc = true
 
