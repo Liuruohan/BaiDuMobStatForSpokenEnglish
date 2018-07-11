@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "BaiduMobStatForSpokenEnglish"
 
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
 
   s.homepage     = "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish"
   
