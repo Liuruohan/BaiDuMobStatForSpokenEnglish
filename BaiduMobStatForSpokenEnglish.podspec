@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   
   s.author       = { "RenJiaoRuoHan" => "RenJiao" }
   
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.license      = "MIT"
   
   s.summary      = "一款定制版本的SDK，不可随便用，只能针对一个appkey"
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Security","CoreLocation","SystemConfiguration","CoreTelephony","CoreGraphics","Foundation","UIKit","AdSupport"
   
-  s.library = "z.1.2.5","stdc++","icucore"
+  s.libraries = "z.1.2.5","stdc++","icucore"
 
   s.requires_arc = true
 
