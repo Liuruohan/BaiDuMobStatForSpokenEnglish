@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
   
-  s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" }
+  s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" , :tag => "#{s.version}"}
 
   s.vendored_libraries = "BaiduMobStatForSpokenEnglish.a"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Security","CoreLocation","SystemConfiguration","CoreTelephony","CoreGraphics","Foundation","UIKit","AdSupport"
   
-  s.library = 'z',"libz.1.2.5","libstdc++","libicucore"
+  s.library = "z.1.2.5","stdc++","icucore"
 
   s.requires_arc = true
 
