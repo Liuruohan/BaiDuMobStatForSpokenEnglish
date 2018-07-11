@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Liuruohan/BaiDuMobStatForSpokenEnglish.git" }
 
 
-  s.subspec "BaiduSDK" do |BaiduSDK|
+  s.subspec "baiduFile" do |baiduFile|
 
-    BaiduSDK.source_files  = "BaiduSDK/*.{h,m}"
-    BaiduSDK.vendored_libraries = 'BaiduSDK/BaiduMobStatForSpokenEnglish.a'
+    baiduFile.source_files  = "BaiduSDK/*.{h,m}"
+    baiduFile.vendored_libraries = 'BaiduSDK/BaiduMobStatForSpokenEnglish.a'
 
   end
 
